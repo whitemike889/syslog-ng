@@ -120,7 +120,7 @@ jobs:
           echo "MY_WORKSPACE_NAME=${MY_WORKSPACE_NAME}" >> ${GITHUB_ENV}
 
       - name: Fetch tarball artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: tarball
           path: ${{ env.MY_WORKSPACE_NAME }}
